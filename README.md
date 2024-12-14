@@ -30,7 +30,7 @@ Note: Step 1 and step 2 are optional as we have provided the resulting dataset [
 ## Step 3: MLLM Training with DPO
 
 ## License
-This project utilizes certain datasets and checkpoints that are subject to their respective original licenses. Users must comply with all terms and conditions of these original licenses. The content of this project itself is licensed under the [Apache license 2.0](https://github.com/pds-dpo/pds-dpo/blob/main/LICENSE).
+This project incorporates specific datasets and checkpoints, each governed by their respective original licenses. Users are required to adhere to the terms and conditions outlined in these licenses. The project’s content is independently licensed under the [Apache license 2.0](https://github.com/pds-dpo/pds-dpo/blob/main/LICENSE).
 
 ## Citation
 ```
