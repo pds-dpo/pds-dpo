@@ -30,7 +30,7 @@ Note: Step 1 and step 2 are optional as we have provided the resulting dataset [
 ## Step 3: MLLM Training with DPO
 
 ## License
-The data and checkpoint is intended and licensed for research use only. The dataset is CC BY NC 4.0 allowing only non-commercial use.
+This project utilizes certain datasets and checkpoints that are subject to their respective original licenses. Users must comply with all terms and conditions of these original licenses. The content of this project itself is licensed under the [Apache license 2.0](https://github.com/pds-dpo/pds-dpo/blob/main/LICENSE).
 
 ## Citation
 ```
