@@ -19,9 +19,15 @@ Starting with an initial text-to-image prompt, the Stable Diffusion model genera
 <img src="https://github.com/pds-dpo/pds-dpo/blob/main/assets/pipeline.png" width=93%>
 <p>
 
+
 ## Installation
 
-## Image Generation and Ranking Instructions
+Note: Step 1 and step 2 are optional as we have provided the resulting dataset [![huggingface dataset](https://img.shields.io/badge/%F0%9F%93%81%20Dataset-pdsdpo/pdsdpo--v1_0--data-blue)](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data)&nbsp;. You may proceed to step 3 directly for reproduction.
+## Step 1: Image Generation and Ranking 
+
+## Step 2: Response Generation and Ranking
+
+## Step 3: MLLM Training with DPO
 
 ## License
 The data and checkpoint is intended and licensed for research use only. The dataset is CC BY NC 4.0 allowing only non-commercial use.
