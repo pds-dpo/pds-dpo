@@ -11,10 +11,31 @@
   <a href="#">Multimodal Preference Data Synthetic Alignment with Reward Model</a>
 </p>
 
-### 🔥 Introducing PDS-DPO: a new framework in generating preferenced data synthetic with reward model for effective Multimodal LLMs alignment ✨
+### 🔥 Introducing PDS-DPO: a new pipeline in generating preferenced data synthetic with reward model for effective Multimodal LLMs alignment ✨
 
 Starting with an initial text-to-image prompt, the Stable Diffusion model generates synthetic images. These images are then filtered using a reward model to exclude low-quality samples and retain only those with the highest scores. The selected images, along with their corresponding instruction prompts, serve as input for open-source MLLMs to generate responses. These responses are evaluated based on various criteria, and only the highest-scoring ones are selected to identify the most suitable positive and negative pairs for DPO-based training.
 
 <p align="center">
-<img src="https://github.com/FoundationVision/VAR/assets/39692511/3e12655c-37dc-4528-b923-ec6c4cfef178" width=93%>
+<img src="https://github.com/pds-dpo/pds-dpo/blob/main/assets/pipeline.png" width=93%>
 <p>
+
+## Installation
+
+## Image Generation and Ranking Instructions
+
+## License
+The data and checkpoint is intended and licensed for research use only. The dataset is CC BY NC 4.0 allowing only non-commercial use.
+
+## Citation
+```
+@Article{PDSDPO,
+      title={Multimodal Preference Data Synthetic Alignment with Reward Model}, 
+      author={Robert Wijaya and Ngoc-Bao Nguyen and Ngai-Man Cheung},
+      year={2024},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+## Acknowledgement
+This research benefits from [LLaVA-1.5](https://github.com/haotian-liu/LLaVA), [ImageReward](https://github.com/THUDM/ImageReward), and [RLHF-Reward-Modeling](https://github.com/RLHFlow/RLHF-Reward-Modeling/). Thanks for their great work.
