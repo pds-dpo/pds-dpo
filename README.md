@@ -36,24 +36,60 @@ pip install -e .
 
 You may skip step 1 and step 2 and proceed to step 3 directly as we have provided the resulting dataset in our [HuggingFace](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data). 
 ## Step 1: Image Generation and Ranking 
-We have provide the sample text-to-image prompts. You can run the generation and ranking script directy as follows.
+We have provide the sample text-to-image prompts in ```prompt/sample.txt```. You can run the generation and ranking script directy as follows.
 ```
 cd image_generation_ranking
 python run.py
 ```
-All images are stored in the ```images``` folder. For each prompt, the script produces four images, which are saved in the ```sample``` folder. The image with the highest ranking score is selected and saved separately in the ```sample-ranked``` folder.
+All images are stored in the ```images``` folder. For each prompt, the script produces four images, which are saved in the ```sample``` folder. The image with the highest ranking score is selected and saved separately in the ```sample-ranked``` folder. 
 ## Step 2: Response Generation and Ranking
+We have provide the sample images and instruction prompts in ```instruction-prompts/sample.txt``` and ```images-ranked```, respectively. By default, we utilized four different open-source MLLMs, including llava-v1.6-mistral-7b-, llama3-llava-next-8b, llava-v1.6-vicuna-13b, and llava-v1.6-vicuna-7b. You may modify accordingly with your preference MLLMs.
+
+You can generate the response by simply use this command.
+```
+cd response_generation_ranking
+python run.py
+```
+The output is the chosen and rejected conversation save as ```output.json``` with the following format:
+```
+[
+    {
+        "id": "transport-919",
+        "image": "images/transport-919.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<image> What challenges does a ferryboat face as it crosses a turbulent sea, with passengers bracing against the spray and wind?"
+            },
+            {
+                "from": "gpt",
+                "value": "chosen response"
+            }
+        ],
+        "rejected_conversations": [
+            {
+                "from": "human",
+                "value": "<image> What challenges does a ferryboat face as it crosses a turbulent sea, with passengers bracing against the spray and wind?"
+            },
+            {
+                "from": "gpt",
+                "value": "rejected response"
+            }
+        ]
+    }
+]
+```
 
 ## Step 3: MLLM Training with DPO
-Stage 1. Modify the ```dpo_trainer.py``` in the trl library
+1. Modify the ```dpo_trainer.py``` in the trl library
 
 To enable image token processing for DPO training, navigate to the trl library directory in your virtual environment: ```cd ./envs/pdsdpo/lib/python3.10/site-packages/trl/trainer/```. Replace ```dpo_trainer.py``` with one of the provided files from the ```tool/``` folder.
 
-Stage 2. Prepare the dataset
+2. Prepare the dataset
 
 Download and extract the entire dataset from [HuggingFace](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data), then save it in the ```data``` folder.
 
-Stage 3. Run DPO training
+3. Run DPO training
 
 Simply train the model with this command:
 ```
