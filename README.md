@@ -21,10 +21,23 @@ Starting with an initial text-to-image prompt, the Stable Diffusion model genera
 
 
 ## Installation
+```
+git clone https://github.com/pds-dpo/pds-dpo.git
+cd pds-dpo
+conda create -n pdsdpo python=3.10 -y
+conda activate pdsdpo
+pip install --upgrade pip
+pip install -e .
+```
 
-Note: Step 1 and step 2 are optional as we have provided the resulting dataset [![huggingface dataset](https://img.shields.io/badge/%F0%9F%93%81%20Dataset-pdsdpo/pdsdpo--v1_0--data-blue)](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data)&nbsp;. You may proceed to step 3 directly for reproduction.
+You may skip step 1 and step 2 and proceed to step 3 directly as we have provided the resulting dataset in our [HuggingFace](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data). 
 ## Step 1: Image Generation and Ranking 
-
+We have provide the sample text-to-image prompts. You can run the generation and ranking script directy as follows.
+```
+cd image_generation_ranking
+python run.py
+```
+All images are stored in the ```images``` folder. For each prompt, the script produces four images, which are saved in the ```sample``` folder. The image with the highest ranking score is selected and saved separately in the ```sample-ranked``` folder.
 ## Step 2: Response Generation and Ranking
 
 ## Step 3: MLLM Training with DPO
