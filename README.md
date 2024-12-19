@@ -19,6 +19,10 @@ Starting with an initial text-to-image prompt, the Stable Diffusion model genera
 <img src="https://github.com/pds-dpo/pds-dpo/blob/main/assets/pipeline.png" width=93%>
 <p>
 
+## News
+* **2024-12:** 📃 Our paper is accesible at [arXiv](#) now!
+* **2024-12:** 🚀 We open-source the code, weights ([7B](https://huggingface.co/pdsdpo/PDS-DPO-7B), [7B-LoRA](https://huggingface.co/pdsdpo/PDS-DPO-7B-LoRA)) and [dataset](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data) of PDS-DPO!
+
 
 ## Installation
 ```
@@ -41,7 +45,22 @@ All images are stored in the ```images``` folder. For each prompt, the script pr
 ## Step 2: Response Generation and Ranking
 
 ## Step 3: MLLM Training with DPO
+Stage 1. Modify the ```dpo_trainer.py``` in the trl library
 
+To enable image token processing for DPO training, navigate to the trl library directory in your virtual environment: ```cd ./envs/pdsdpo/lib/python3.10/site-packages/trl/trainer/```. Replace ```dpo_trainer.py``` with one of the provided files from the ```tool/``` folder.
+
+Stage 2. Prepare the dataset
+
+Download and extract the entire dataset from [HuggingFace](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data), then save it in the ```data``` folder.
+
+Stage 3. Run DPO training
+
+Simply train the model with this command:
+```
+cd scripts
+bash run_dpo.sh
+```
+For comprehensive tutorials on evaluating other benchmarks, please refer to the [LLaVA](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) repository documentation.
 ## License
 This project incorporates specific datasets and checkpoints, each governed by their respective original licenses. Users are required to adhere to the terms and conditions outlined in these licenses. The project’s content is independently licensed under the [Apache license 2.0](https://github.com/pds-dpo/pds-dpo/blob/main/LICENSE).
 
