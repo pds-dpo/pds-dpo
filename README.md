@@ -96,6 +96,8 @@ Double-check the parameters on ```scripts/run_dpo.sh``` and made adjustment if n
 cd scripts
 bash run_dpo.sh
 ```
+We trained the model using 2 x 80GB A100 GPUs.
+
 For comprehensive tutorials on evaluating other benchmarks, please refer to the [LLaVA](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md) repository documentation.
 ## License
 This project incorporates specific datasets and checkpoints, each governed by their respective original licenses. Users are required to adhere to the terms and conditions outlined in these licenses. The project’s content is independently licensed under the [Apache license 2.0](https://github.com/pds-dpo/pds-dpo/blob/main/LICENSE).
