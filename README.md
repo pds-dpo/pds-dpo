@@ -91,7 +91,7 @@ Download and extract the entire dataset from [HuggingFace](https://huggingface.c
 
 3. Run DPO training
 
-Simply train the model with this command:
+Double-check the parameters on ```scripts/run_dpo.sh``` and made adjustment if necessary, then simply train the model with this command:
 ```
 cd scripts
 bash run_dpo.sh
