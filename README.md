@@ -43,7 +43,7 @@ python run.py
 ```
 All images are stored in the ```images``` folder. For each prompt, the script produces four images, which are saved in the ```sample``` folder. The image with the highest ranking score is selected and saved separately in the ```sample-ranked``` folder. 
 ## Step 2: Response Generation and Ranking
-We have provide the sample images and instruction prompts in ```instruction-prompts/sample.txt``` and ```images-ranked```, respectively. By default, we utilized four different open-source MLLMs, including llava-v1.6-mistral-7b-, llama3-llava-next-8b, llava-v1.6-vicuna-13b, and llava-v1.6-vicuna-7b. You may modify accordingly with your preference MLLMs.
+We have provide the sample images and instruction prompts in ```instruction-prompts/sample.txt``` and ```images-ranked```, respectively. By default, we utilized four different open-source MLLMs, including llava-v1.6-mistral-7b-, llava-v1.6-vicuna-13b, and llava-v1.6-vicuna-7b. You may modify accordingly with your preference MLLMs.
 
 You can generate the response by simply use this command.
 ```
@@ -83,7 +83,7 @@ The output is the chosen and rejected conversation save as ```output.json``` wit
 ## Step 3: MLLM Training with DPO
 1. Modify the ```dpo_trainer.py``` in the trl library
 
-To enable image token processing for DPO training, navigate to the trl library directory in your virtual environment: ```cd ./envs/pdsdpo/lib/python3.10/site-packages/trl/trainer/```. Replace ```dpo_trainer.py``` with one of the provided files from the ```tool/``` folder.
+To enable image token processing for DPO training, navigate to the trl library directory in your virtual environment: ```cd ./envs/pdsdpo/lib/python3.10/site-packages/trl/trainer/```. Replace ```dpo_trainer.py``` with the provided file from the ```tool``` folder.
 
 2. Prepare the dataset
 
