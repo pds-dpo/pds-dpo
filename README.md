@@ -104,14 +104,15 @@ This project incorporates specific datasets and checkpoints, each governed by th
 
 ## Citation
 ```
-@Article{PDSDPO,
+@misc{wijaya2024multimodalpreferencedatasynthetic,
       title={Multimodal Preference Data Synthetic Alignment with Reward Model}, 
       author={Robert Wijaya and Ngoc-Bao Nguyen and Ngai-Man Cheung},
       year={2024},
-      eprint={},
+      eprint={2412.17417},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
 ```
+
 ## Acknowledgement
 This research benefits from [LLaVA-1.5](https://github.com/haotian-liu/LLaVA), [ImageReward](https://github.com/THUDM/ImageReward), and [RLHF-Reward-Modeling](https://github.com/RLHFlow/RLHF-Reward-Modeling/). Thanks for their great work.
