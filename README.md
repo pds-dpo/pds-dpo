@@ -1,7 +1,7 @@
 # PDS-DPO: Multimodal Preference Data Synthetic Alignment with Reward Model
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv%20paper-2404.02905-b31b1b.svg)](#)&nbsp;
+[![arXiv](https://img.shields.io/badge/arXiv%20paper-2412.17417-b31b1b.svg)](https://arxiv.org/abs/2412.17417)&nbsp;
 [![huggingface weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-pdsdpo/PDS--DPO--7B-yellow)](https://huggingface.co/pdsdpo/PDS-DPO-7B)&nbsp;
 [![huggingface dataset](https://img.shields.io/badge/%F0%9F%93%81%20Dataset-pdsdpo/pdsdpo--v1_0--data-blue)](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data)&nbsp;
 
@@ -20,7 +20,7 @@ Starting with an initial text-to-image prompt, the Stable Diffusion model genera
 <p>
 
 ## News
-* **2024-12:** 📃 Our paper is accesible at [arXiv](#) now!
+* **2024-12:** 📃 Our paper is accesible at [arXiv](https://arxiv.org/abs/2412.17417) now!
 * **2024-12:** 🚀 We open-source the code, weights ([7B](https://huggingface.co/pdsdpo/PDS-DPO-7B), [7B-LoRA](https://huggingface.co/pdsdpo/PDS-DPO-7B-LoRA)) and [dataset](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data) of PDS-DPO!
 
 
