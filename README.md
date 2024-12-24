@@ -8,7 +8,7 @@
 </div>
 
 <p align="center" style="font-size: larger;">
-  <a href="#">Multimodal Preference Data Synthetic Alignment with Reward Model</a>
+  <a href="https://arxiv.org/abs/2412.17417">Multimodal Preference Data Synthetic Alignment with Reward Model</a>
 </p>
 
 ### 🔥 Introducing PDS-DPO: a new pipeline in generating preferenced data synthetic with reward model for effective Multimodal LLMs alignment ✨
