@@ -104,13 +104,11 @@ This project incorporates specific datasets and checkpoints, each governed by th
 
 ## Citation
 ```
-@misc{wijaya2024multimodalpreferencedatasynthetic,
-      title={Multimodal Preference Data Synthetic Alignment with Reward Model}, 
-      author={Robert Wijaya and Ngoc-Bao Nguyen and Ngai-Man Cheung},
-      year={2024},
-      eprint={2412.17417},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{wijaya2024multimodal,
+  title={Multimodal Preference Data Synthetic Alignment with Reward Model},
+  author={Wijaya, Robert and Nguyen, Ngoc-Bao and Cheung, Ngai-Man},
+  journal={arXiv preprint arXiv:2412.17417},
+  year={2024}
 }
 ```
 
