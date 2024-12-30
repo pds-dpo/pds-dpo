@@ -10,12 +10,14 @@ build:
     - "torch==2.1.2"
     - "torchvision==0.16.2"
     - "transformers==4.33.0"
-    - "tokenizers==0.13.3"
+    - "tokenizers==0.19.1"
     - "sentencepiece==0.1.99"
     - "shortuuid==1.0.11"
     - "accelerate==0.34.0"
+    - "diffusers==0.31.0"
+    - "huggingface-hub==0.27.0"
     - "peft==0.6.0"
-    - "bitsandbytes==0.41.0"
+    - "bitsandbytes==0.45.0"
     - "pydantic"
     - "markdown2[all]"
     - "numpy==1.26.0"
@@ -36,6 +38,7 @@ build:
     - "wandb==0.15.12"
     - "Pygments==2.16.1"
     - "wavedrom==2.0.3.post3"
+    - "peft==0.6.0"
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.0.3/pget" && chmod +x /usr/local/bin/pget
 
