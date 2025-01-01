@@ -9,7 +9,7 @@ build:
   python_packages:
     - "torch==2.1.2"
     - "torchvision==0.16.2"
-    - "transformers==4.33.0"
+    - "transformers==4.44.1"
     - "tokenizers==0.19.1"
     - "sentencepiece==0.1.99"
     - "shortuuid==1.0.11"
