@@ -20,6 +20,7 @@ Starting with an initial text-to-image prompt, the Stable Diffusion model genera
 <p>
 
 ## News
+* **2025-04:** 📁 We released an updated version of [dataset](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_1-data), adding 3K new data with new categories and improved quality responses.
 * **2024-12:** 📃 Our paper is accesible at [arXiv](https://arxiv.org/abs/2412.17417) now!
 * **2024-12:** 🚀 We open-source the code, weights ([7B](https://huggingface.co/pdsdpo/PDS-DPO-7B), [7B-LoRA](https://huggingface.co/pdsdpo/PDS-DPO-7B-LoRA)) and [dataset](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data) of PDS-DPO!
 
