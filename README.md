@@ -15,6 +15,8 @@
 
 Starting with an initial text-to-image prompt, the Stable Diffusion model generates synthetic images. These images are then filtered using a reward model to exclude low-quality samples and retain only those with the highest scores. The selected images, along with their corresponding instruction prompts, serve as input for open-source MLLMs to generate responses. These responses are evaluated based on various criteria, and only the highest-scoring ones are selected to identify the most suitable positive and negative pairs for DPO-based training.
 
+The dataset we proposed is designed for post-training where we use a very small amount of data to get exactly the behaviors we want. Do note that small amounts of the right kinds of behavior (safety, instruction-following, style) can also make a difference, although there is a long-tail benefits from more data.
+
 <p align="center">
 <img src="https://github.com/pds-dpo/pds-dpo/blob/main/assets/pipeline.png" width=93%>
 <p>
