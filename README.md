@@ -1,4 +1,4 @@
-# PDS-DPO: Multimodal Preference Data Synthetic Alignment with Reward Model
+# SynthAlign: Improved Trustworthiness of Vision-Language Model via Synthetic Preference Data Alignment
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2412.17417-b31b1b.svg)](https://arxiv.org/abs/2412.17417)&nbsp;
@@ -11,7 +11,7 @@
   <a href="https://arxiv.org/abs/2412.17417">Multimodal Preference Data Synthetic Alignment with Reward Model</a>
 </p>
 
-### 🔥 Introducing PDS-DPO: a new pipeline in generating preferenced data synthetic with reward model for effective Multimodal LLMs alignment ✨
+### 🔥 Introducing SynthAlign: a pipeline in generating synthetic preferenced data to improve Multimodal LLMs alignment ✨
 
 Starting with an initial text-to-image prompt, the Stable Diffusion model generates synthetic images. These images are then filtered using a reward model to exclude low-quality samples and retain only those with the highest scores. The selected images, along with their corresponding instruction prompts, serve as input for open-source MLLMs to generate responses. These responses are evaluated based on various criteria, and only the highest-scoring ones are selected to identify the most suitable positive and negative pairs for DPO-based training.
 
