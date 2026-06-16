@@ -8,10 +8,6 @@
 
 </div>
 
-<p align="center" style="font-size: larger;">
-  <a href="https://arxiv.org/abs/2412.17417">Multimodal Preference Data Synthetic Alignment with Reward Model</a>
-</p>
-
 ### Introducing SynthAlign
 
 SynthAlign builds synthetic multimodal preference data for DPO alignment. The pipeline starts from text-to-image prompts, generates multiple candidate images, ranks those images with an image reward model, asks open-source MLLMs to answer instructions about the selected images, ranks the candidate responses, and finally trains an MLLM with chosen/rejected preference pairs.
@@ -236,11 +232,14 @@ This project incorporates specific datasets and checkpoints, each governed by th
 ## Citation
 
 ```bibtex
-@article{wijaya2024multimodal,
-  title={Multimodal Preference Data Synthetic Alignment with Reward Model},
-  author={Wijaya, Robert and Nguyen, Ngoc-Bao and Cheung, Ngai-Man},
-  journal={arXiv preprint arXiv:2412.17417},
-  year={2024}
+@misc{wijaya2025synthalignimprovingtrustworthinessvisionlanguage,
+      title={Synth-Align: Improving Trustworthiness in Vision-Language Model with Synthetic Preference Data Alignment}, 
+      author={Robert Wijaya and Ngoc-Bao Nguyen and Ngai-Man Cheung},
+      year={2025},
+      eprint={2412.17417},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.17417}, 
 }
 ```
 
