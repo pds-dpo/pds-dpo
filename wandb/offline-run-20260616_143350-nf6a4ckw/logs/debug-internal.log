@@ -1,0 +1,15 @@
+{"time":"2026-06-16T14:33:50.382373997+08:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2026-06-16T14:33:50.382427038+08:00","level":"INFO","msg":"created symlink","path":"/mnt/hdd/robert/codex/pds-dpo/wandb/offline-run-20260616_143350-nf6a4ckw/logs/debug-core.log"}
+{"time":"2026-06-16T14:33:50.509969259+08:00","level":"INFO","msg":"created new stream","id":"nf6a4ckw"}
+{"time":"2026-06-16T14:33:50.509990559+08:00","level":"INFO","msg":"stream: started","id":"nf6a4ckw"}
+{"time":"2026-06-16T14:33:50.510014193+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"nf6a4ckw"}}
+{"time":"2026-06-16T14:33:50.510087311+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"nf6a4ckw"}}
+{"time":"2026-06-16T14:33:50.510082683+08:00","level":"INFO","msg":"sender: started","stream_id":"nf6a4ckw"}
+{"time":"2026-06-16T14:33:50.519226511+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2026-06-16T14:33:56.998771024+08:00","level":"INFO","msg":"stream: closing","id":"nf6a4ckw"}
+{"time":"2026-06-16T14:33:56.998836919+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2026-06-16T14:33:56.999508096+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2026-06-16T14:33:56.99972254+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"nf6a4ckw"}}
+{"time":"2026-06-16T14:33:56.999747067+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"nf6a4ckw"}}
+{"time":"2026-06-16T14:33:56.999779137+08:00","level":"INFO","msg":"sender: closed","stream_id":"nf6a4ckw"}
+{"time":"2026-06-16T14:33:56.999826076+08:00","level":"INFO","msg":"stream: closed","id":"nf6a4ckw"}

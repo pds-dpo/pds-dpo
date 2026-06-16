@@ -7,7 +7,7 @@ name = "pdsdpo"
 version = "1.2.2.post1"
 description = ""
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: Apache Software License",
@@ -15,18 +15,15 @@ classifiers = [
 dependencies = [
     "torch==2.6.0",
     "torchvision==0.21.0",
-    "transformers==4.31.0",
-    "tokenizers==0.13.3",
     "sentencepiece==0.1.99",
     "shortuuid==1.0.13",
     "accelerate==0.34.0",
     "peft==0.6.0",
     "bitsandbytes==0.46.1",
-    "diffusers==0.31.0",
     "huggingface-hub==0.34.3",
     "pydantic==2.11.7",
     "markdown2==2.5.4",
-    "numpy==2.2.6",
+    "numpy==1.26.4",
     "scikit-learn==1.7.1",
     "gradio==4.16.0",
     "gradio_client==0.8.1",
@@ -36,15 +33,28 @@ dependencies = [
     "fastapi==0.116.1",
     "einops==0.6.1",
     "einops-exts==0.0.4",
-    "timm==1.0.19",
-    "trl==0.7.7",
-    "image-reward==1.5",
-    "openai-clip==1.0.1",
-    "protobuf==3.20.0"
+    "protobuf==3.20.0",
+    "setuptools<81"
 ]
 
 [project.optional-dependencies]
-train = ["deepspeed==0.14.4", "ninja==1.11.1.4", "wandb==0.18.5"]
+ranking = [
+    "transformers==4.46.3",
+    "tokenizers==0.20.3",
+    "diffusers==0.31.0",
+    "image-reward==1.5",
+    "openai-clip==1.0.1",
+    "timm==0.6.13"
+]
+train = [
+    "transformers==4.31.0",
+    "tokenizers==0.13.3",
+    "trl==0.7.7",
+    "timm==0.6.13",
+    "deepspeed==0.14.4",
+    "ninja==1.11.1.4",
+    "wandb==0.18.5"
+]
 build = ["build", "twine"]
 
 [tool.setuptools.packages.find]

@@ -1,0 +1,8 @@
+{"time":"2026-06-16T14:39:24.077806583+08:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2026-06-16T14:39:24.077834976+08:00","level":"INFO","msg":"created symlink","path":"/mnt/hdd/robert/codex/pds-dpo/wandb/offline-run-20260616_143924-7c4hoow7/logs/debug-core.log"}
+{"time":"2026-06-16T14:39:24.185386491+08:00","level":"INFO","msg":"created new stream","id":"7c4hoow7"}
+{"time":"2026-06-16T14:39:24.185436946+08:00","level":"INFO","msg":"stream: started","id":"7c4hoow7"}
+{"time":"2026-06-16T14:39:24.185543187+08:00","level":"INFO","msg":"sender: started","stream_id":"7c4hoow7"}
+{"time":"2026-06-16T14:39:24.185475108+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"7c4hoow7"}}
+{"time":"2026-06-16T14:39:24.185509894+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"7c4hoow7"}}
+{"time":"2026-06-16T14:39:24.19254901+08:00","level":"INFO","msg":"Starting system monitor"}

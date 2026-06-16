@@ -1,0 +1,2 @@
+# Tested dependency profile for Step 1 image ranking and Step 2 response ranking.
+-e .[ranking]
