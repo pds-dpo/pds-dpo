@@ -232,14 +232,11 @@ This project incorporates specific datasets and checkpoints, each governed by th
 ## Citation
 
 ```bibtex
-@misc{wijaya2025synthalignimprovingtrustworthinessvisionlanguage,
-      title={Synth-Align: Improving Trustworthiness in Vision-Language Model with Synthetic Preference Data Alignment}, 
-      author={Robert Wijaya and Ngoc-Bao Nguyen and Ngai-Man Cheung},
-      year={2025},
-      eprint={2412.17417},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.17417}, 
+@article{wijaya2024synth,
+  title={Synth-Align: Improving Trustworthiness in Vision-Language Model with Synthetic Preference Data Alignment},
+  author={Wijaya, Robert and Nguyen, Ngoc-Bao and Cheung, Ngai-Man},
+  journal={arXiv preprint arXiv:2412.17417},
+  year={2024}
 }
 ```
 
