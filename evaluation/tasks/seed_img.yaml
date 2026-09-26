@@ -1,0 +1,25 @@
+dataset_path: lmms-lab/SEED-Bench
+dataset_kwargs:
+  revision: 74c4ea0cee96786739e4ccb97d227818a05ae752
+  token: true
+task: synthalign_v10_full_seed_img
+test_split: test
+output_type: generate_until
+doc_to_visual: !function legacy_utils.seed_doc_to_visual
+doc_to_text: !function legacy_utils.seed_doc_to_text
+doc_to_target: answer
+generation_kwargs:
+  max_new_tokens: 16
+  temperature: 0
+  do_sample: false
+process_results: !function legacy_utils.seed_process_result
+metric_list:
+  - metric: seed_image
+    aggregation: mean
+    higher_is_better: true
+metadata:
+  version: 1.0
+  expected_filtered_samples: 14233
+  filter: data_type == image
+
+process_docs: !function full_tasks.seed_img

@@ -1,0 +1,34 @@
+dataset_path: lmms-lab/MME
+dataset_kwargs:
+  revision: d6c9023f017b564f7b3ccccf5348166bce8fdbcd
+  token: true
+task: synthalign_v10_full_mme
+test_split: test
+output_type: generate_until
+doc_to_visual: !function lmms_eval.tasks.mme.utils.mme_doc_to_visual
+doc_to_text: !function lmms_eval.tasks.mme.utils.mme_doc_to_text
+doc_to_target: answer
+generation_kwargs:
+  max_new_tokens: 16
+  temperature: 0
+  top_p: 1.0
+  num_beams: 1
+  do_sample: false
+process_results: !function lmms_eval.tasks.mme.utils.mme_process_results
+metric_list:
+  - metric: mme_perception_score
+    aggregation: !function legacy_utils.mme_aggregate_results_complete_or_smoke
+    higher_is_better: true
+  - metric: mme_cognition_score
+    aggregation: !function legacy_utils.mme_aggregate_results_complete_or_smoke
+    higher_is_better: true
+lmms_eval_specific_kwargs:
+  default:
+    pre_prompt: ""
+    post_prompt: "\nAnswer the question using a single word or phrase."
+metadata:
+  version: 1.0
+  model_protocol: qwen2vl_base_pinned
+  smoke_partial_pair_fallback: true
+
+process_docs: !function full_tasks.mme

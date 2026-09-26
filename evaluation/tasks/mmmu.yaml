@@ -1,0 +1,32 @@
+dataset_path: lmms-lab/MMMU
+dataset_kwargs:
+  revision: 364f2e2eb107b36e07ff4c5a15f5947a759cef47
+  token: true
+task: synthalign_v10_full_mmmu
+test_split: validation
+output_type: generate_until
+doc_to_visual: !function mmmu_utils.mmmu_doc_to_visual
+doc_to_text: !function mmmu_utils.mmmu_doc_to_text
+doc_to_target: answer
+process_results: !function mmmu_full.mmmu_process_results
+generation_kwargs:
+  max_new_tokens: 128
+  temperature: 0
+  do_sample: false
+metric_list:
+  - metric: mmmu_acc
+    aggregation: !function mmmu_utils.mmmu_aggregate_results
+    higher_is_better: true
+lmms_eval_specific_kwargs:
+  default:
+    prompt_type: format
+    multiple_choice_prompt: "Answer with the option's letter from the given choices directly."
+    open_ended_prompt: "Answer the question using a single word or phrase."
+metadata:
+  version: 1.0
+  interleaved_format: false
+  split: validation
+  expected_samples: 900
+  dataset_revision: 364f2e2eb107b36e07ff4c5a15f5947a759cef47
+
+process_docs: !function full_tasks.mmmu
