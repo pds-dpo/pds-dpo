@@ -70,7 +70,7 @@ If you prefer a single conda environment, install `requirements/step1_2.txt` for
 
 You can skip Steps 1 and 2 and train directly from the released preference data:
 
-* [pdsdpo/synthalign-length-adjusted-9k]([https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_1-data](https://huggingface.co/datasets/pdsdpo/synthalign-length-adjusted-9k)), length-adjusted dataset
+* [pdsdpo/synthalign-length-adjusted-9k](https://huggingface.co/datasets/pdsdpo/synthalign-length-adjusted-9k), length-adjusted dataset
 * [pdsdpo/pdsdpo-v1_1-data](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_1-data), updated dataset release
 * [pdsdpo/pdsdpo-v1_0-data](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data), original release
 
