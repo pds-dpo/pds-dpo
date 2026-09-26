@@ -1,0 +1,6 @@
+config.json
+runs/
+__pycache__/
+*.pyc
+*.key
+.env

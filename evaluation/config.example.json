@@ -1,0 +1,23 @@
+{
+  "experiment": "synthalign-full9k-llava15-reproduction",
+  "run_root": "./runs/full9k",
+  "suite_root": "/path/to/hallucination-suite",
+  "lmms_eval_root": "/path/to/lmms-eval",
+  "inference_python": "/path/to/inference-env/bin/python",
+  "scoring_python": "/path/to/scoring-env/bin/python",
+  "models": {
+    "vanilla": "/path/to/llava-v1.5-7b",
+    "A": "/path/to/merged/A",
+    "B": "/path/to/merged/B",
+    "C": "/path/to/merged/C",
+    "D_small": "/path/to/merged/D_small",
+    "E": "/path/to/merged/E",
+    "F": "/path/to/merged/F"
+  },
+  "tasks": ["mmhal", "object_halbench", "amber", "amber_disc", "pope"],
+  "training_images_json": null,
+  "judge": {"model": "gpt-4.1-mini-2025-04-14", "budget_usd": 10.0,
+    "input_usd_per_million": 0.4, "output_usd_per_million": 1.6},
+  "bootstrap_replicates": 10000,
+  "statistics_seed": 20260926
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "suite_name": "synthalign-hallucination-eval-v1",
+  "generation": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "num_beams": 1,
+    "batch_size": 1,
+    "seed": 0,
+    "system_prompt": "You are a helpful assistant."
+  },
+  "qwen2_vl": {
+    "base_revision": "eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+    "min_pixels": 200704,
+    "max_pixels": 1003520,
+    "conversation": "qwen2_vl_chat_template",
+    "processor_use_fast": false
+  },
+  "llava_1_5": {
+    "base_model": "liuhaotian/llava-v1.5-7b",
+    "base_revision": "4481d270cc22fd5c4d1bb5df129622006ccd9234",
+    "conversation": "vicuna_v1",
+    "image_aspect_ratio": "pad"
+  },
+  "benchmarks": {
+    "mmhal": {
+      "count": 96,
+      "max_new_tokens": 1024,
+      "official_source": "https://huggingface.co/datasets/Shengcao1006/MMHal-Bench",
+      "revision": "f5f49a938f45ed99e235b8519ba28f76832a2add",
+      "metrics": ["average_score", "hallucination_rate", "per_type_score"],
+      "judge": {
+        "historical_model": "gpt-4-0314",
+        "historical_model_retired": true,
+        "model": "REQUIRED_AT_SCORING_TIME",
+        "temperature": 0.0
+      }
+    },
+    "object_halbench": {
+      "count": 300,
+      "max_new_tokens": 1024,
+      "official_source": "https://github.com/RLHF-V/RLHF-V",
+      "revision": "3863e39d5f541db7e3725acd8131ab99221455dc",
+      "coco_annotations": "COCO 2014 train+val captions and instances",
+      "metrics": ["response_hallucination", "mention_hallucination", "object_recall", "average_length"],
+      "judge": {
+        "purpose": "extract visible object names mentioned in each model answer",
+        "historical_model": "gpt-3.5-turbo-0613",
+        "historical_model_retired": true,
+        "model": "REQUIRED_AT_SCORING_TIME",
+        "temperature": 0.0
+      }
+    },
+    "amber": {
+      "count": 1004,
+      "max_new_tokens": 2048,
+      "prompt": "Describe this image.",
+      "official_source": "https://github.com/junyangwang0410/AMBER",
+      "revision": "534babf6bbfcce2e735c26289dedfb21cef3c939",
+      "evaluation_type": "g",
+      "metrics": ["CHAIR", "Cover", "Hal", "Cog"],
+      "judge": null
+    }
+  }
+}
