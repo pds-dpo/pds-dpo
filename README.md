@@ -1,16 +1,12 @@
-# SynthAlign: Improved Trustworthiness of Vision-Language Model via Synthetic Preference Data Alignment
+# Mitigating Hallucination in Multimodal LLMs with Reward-Guided Synthetic Data
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv%20paper-2412.17417-b31b1b.svg)](https://arxiv.org/abs/2412.17417)&nbsp;
-[![huggingface weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-pdsdpo/PDS--DPO--7B-yellow)](https://huggingface.co/pdsdpo/PDS-DPO-7B)&nbsp;
-[![huggingface dataset](https://img.shields.io/badge/%F0%9F%93%81%20Dataset-pdsdpo/pdsdpo--v1_0--data-blue)](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_0-data)&nbsp;
-
 </div>
 
-### Introducing SynthAlign
+### Introduction
 
-SynthAlign builds synthetic multimodal preference data for DPO alignment. The pipeline starts from text-to-image prompts, generates multiple candidate images, ranks those images with an image reward model, asks open-source MLLMs to answer instructions about the selected images, ranks the candidate responses, and finally trains an MLLM with chosen/rejected preference pairs.
+SynthAlign builds synthetic reward-guided preference data for multimodal DPO alignment. The pipeline starts from text-to-image prompts, generates multiple candidate images, ranks those images with an image reward model, asks open-source MLLMs to answer instructions about the selected images, ranks the candidate responses, and finally trains an MLLM with chosen/rejected preference pairs.
 
 The dataset is designed for post-training: small amounts of high-quality preference data can steer safety, instruction-following, and response style, while larger curated sets can provide broader coverage.
 
@@ -231,14 +227,7 @@ This project incorporates specific datasets and checkpoints, each governed by th
 
 ## Citation
 
-```bibtex
-@article{wijaya2024synth,
-  title={Synth-Align: Improving Trustworthiness in Vision-Language Model with Synthetic Preference Data Alignment},
-  author={Wijaya, Robert and Nguyen, Ngoc-Bao and Cheung, Ngai-Man},
-  journal={arXiv preprint arXiv:2412.17417},
-  year={2024}
-}
-```
+
 
 ## Acknowledgement
 
