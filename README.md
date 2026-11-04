@@ -1,4 +1,4 @@
-# Mitigating Hallucination in Multimodal LLMs with Reward-Guided Synthetic Data
+# [Neurocomputing 2026] Mitigating Hallucination in Multimodal LLMs with Reward-Guided Synthetic Data
 
 <div align="center">
 
@@ -228,7 +228,20 @@ For comprehensive tutorials on evaluating other benchmarks, refer to the [LLaVA 
 This project incorporates specific datasets and checkpoints, each governed by their respective original licenses. Users are required to adhere to the terms and conditions outlined in those licenses. The project's content is independently licensed under the [Apache License 2.0](https://github.com/pds-dpo/pds-dpo/blob/main/LICENSE).
 
 ## Citation
-
+```
+@article{WIJAYA2027135481,
+title = {Mitigating hallucination in multimodal LLMs with reward-guided synthetic data},
+journal = {Neurocomputing},
+volume = {711},
+pages = {135481},
+year = {2027},
+issn = {0925-2312},
+doi = {https://doi.org/10.1016/j.neucom.2026.135481},
+url = {https://www.sciencedirect.com/science/article/pii/S0925231226028791},
+author = {Robert Wijaya and Ngoc-Bao Nguyen and Ngai-Man Cheung},
+keywords = {Multimodal LLMs, Vision-language model, Synthetic data, Hallucination mitigation, Reward model}
+}
+```
 
 
 ## Acknowledgement
