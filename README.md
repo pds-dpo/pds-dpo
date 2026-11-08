@@ -15,7 +15,7 @@ The dataset is designed for post-training: small amounts of high-quality prefere
 </p>
 
 ## News
-* **2026-10:** Accepted to journal of Neurocomputing 2026.
+* **2026-10:** Accepted to journal of Neurocomputing 2026, read the [paper](https://www.sciencedirect.com/science/article/pii/S0925231226028791).
 * **2026-09:** We released 9k controlled/adjusted response length [dataset](https://huggingface.co/datasets/pdsdpo/synthalign-length-adjusted-9k), and its trained [model weights](https://huggingface.co/pdsdpo/SynthAlign-LLaVA-1.5-7B-LengthAdjusted-9K-LoRA).
 * **2025-04:** We released an updated version of the [dataset](https://huggingface.co/datasets/pdsdpo/pdsdpo-v1_1-data), adding 3K new data with new categories and improved quality responses.
 * **2024-12:** Our paper is available on [arXiv](https://arxiv.org/abs/2412.17417).
